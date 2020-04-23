@@ -1,7 +1,11 @@
 @import "../../node_modules/normalize-scss/sass/normalize/_import-now";
 
+@import "./fonts.scss";
+@import "./variables.scss";
+
 @import "./components/common.scss";
 
 @import "./components/containers.scss";
 @import "./components/header.scss";
+@import "./components/navigation.scss";
 @import "./components/footer.scss";

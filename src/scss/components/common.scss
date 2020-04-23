@@ -1,0 +1,69 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea, button {
+    background: none;
+    border: none;
+    resize: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.main-title {
+    font-family: "BigNoodleTitling", sans-serif;
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-family: "BigNoodleTitling", sans-serif;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 48px;
+}
+
+.text {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button {
+    padding: 15px 40px;
+    font-size: 14px;
+    color: white;
+    background: $orange;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+
+    &:active {
+        filter: brightness(0.7);
+    }
+}

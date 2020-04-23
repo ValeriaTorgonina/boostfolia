@@ -62,7 +62,7 @@ gulp.task("copy", () =>
     gulp.src([
         "src/fonts/**",
         "src/img/**",
-        "src/js/**"
+        "src/js/**",
     ], {
         base: 'src'
     })

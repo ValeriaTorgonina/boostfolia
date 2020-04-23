@@ -1,1 +1,37 @@
-@import "../variables.scss";
+.main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    background: $lightgray;
+    transition: 0.2s;
+
+    &.out {
+        transform: translate(0, -150px);
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 30px;
+        height: 40px;
+        margin-right: 20px;
+        fill: $orange;
+    }
+
+    &__logo-text {
+        font-family: "BigNoodleTitling", sans-serif;
+        font-size: 40px;
+        color: $fontgray;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
