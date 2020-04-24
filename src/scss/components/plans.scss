@@ -1,0 +1,15 @@
+.plans {
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background: $darkblue;
+    text-align: center;
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+}

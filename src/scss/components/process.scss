@@ -1,0 +1,46 @@
+.process {
+    display: flex;
+    font-size: 0;
+    background: $darkblue;
+
+    &__content,
+    &__video-inner {
+        display: inline-block;
+        width: 50%;
+        height: auto;
+    }
+
+    &__content {
+        padding: 100px 80px;
+        color: $font-lightgray;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .text {
+        margin-bottom: 40px;
+        line-height: 18px;
+    }
+
+    &__video-inner {
+        position: relative;
+    }
+
+    &__video {
+        object-fit: cover;
+        opacity: 0.7;
+    }
+
+    &__play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: white;
+    }
+}

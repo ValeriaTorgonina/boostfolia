@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
@@ -26,7 +26,10 @@
             <section class="about" id="about">
                 <div class="container">
                     <h2 class="title">about us</h2>
-                    <p class="text"></p>
+                    <p class="text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis rerum 
+                        perferendis in enim ipsum et dignissimos magnam facere officia beatae.
+                    </p>
                     <div class="about__inner">
                         <div class="about__card">
                             <svg class="about__icon">
@@ -69,18 +72,19 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                         Cum impedit ducimus voluptatibus quis 
                         nisi quaerat consequuntur recusandae voluptates, 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, eaque.
                     </p>
                     <button class="button">play now</button>
-                    <div class="process__video-inner">
-                        <video class="process__video" id="process__video" width="100%" height="100%" poster="img/video/video-poster.jpg">
-                            <source src="img/video/video.mp4" type="video/mp4">
-                        </video>
-                        <button class="process__play-button">
-                            <svg class="process__icon">
-                                <use xlink:href="img/sprite.svg#play"></use>
-                            </svg>
-                        </button>
-                    </div>
+                </div>
+                <div class="process__video-inner">
+                    <video class="process__video" id="process__video" width="100%" height="100%" poster="img/video/video-poster.jpg">
+                        <source src="img/video/video.mp4" type="video/mp4">
+                    </video>
+                    <button class="process__play-button">
+                        <svg class="process__icon">
+                            <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                    </button>
                 </div>
             </section>
 
@@ -89,144 +93,143 @@
                 <p class="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing 
                     elit. Velit praesentium possimus earum ipsa, hic odio.
+                    Lorem, ipsum dolor sit amet consectetur.
                 </p>
                 <ul class="works__filter">
                     <li class="works__filter-item">
-                        <button class="works__filter-button">all projects</button>
+                        <button class="works__filter-button active" name="all">all projects</button>
                     </li>
                     <li class="works__filter-item">
-                        <button class="works__filter-button">photography</button>
+                        <button class="works__filter-button" name="photo">photography</button>
                     </li>
                     <li class="works__filter-item">
-                        <button class="works__filter-button">web design</button>
+                        <button class="works__filter-button" name="design">web design</button>
                     </li>
                     <li class="works__filter-item">
-                        <button class="works__filter-button">branding</button>
+                        <button class="works__filter-button" name="branding">branding</button>
                     </li>
                     <li class="works__filter-item">
-                        <button class="works__filter-button">mobile app</button>
+                        <button class="works__filter-button" name="mobile">mobile app</button>
                     </li>
                 </ul>
                 <div class="works__inner">
-                    <div class="works__item">
+                    <div class="works__item" title="photo">
                         <picture class="works__image">
                             <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
                             <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="mobile">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-2.webp">
+                            <img class="lazyload" data-src="img/card-bg-2.jpg" height="100%" width="100%" alt="work 2">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="branding">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-3.webp">
+                            <img class="lazyload" data-src="img/card-bg-3.jpg" height="100%" width="100%" alt="work 3">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="design">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-4.webp">
+                            <img class="lazyload" data-src="img/card-bg-4.jpg" height="100%" width="100%" alt="work 4">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="design">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-5.webp">
+                            <img class="lazyload" data-src="img/card-bg-5.jpg" height="100%" width="100%" alt="work 5">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="mobile">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-6.webp">
+                            <img class="lazyload" data-src="img/card-bg-6.jpg" height="100%" width="100%" alt="work 6">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="branding">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-7.webp">
+                            <img class="lazyload" data-src="img/card-bg-7.jpg" height="100%" width="100%" alt="work 7">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="photo">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="">
+                            <img class="lazyload" data-src="img/card-bg-8.jpg" height="100%" width="100%" alt="work 8">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="design">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-9.webp">
+                            <img class="lazyload" data-src="img/card-bg-9.jpg" height="100%" width="100%" alt="work 9">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="branding">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-10.webp">
+                            <img class="lazyload" data-src="img/card-bg-10.jpg" height="100%" width="100%" alt="work 10">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="mobile">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-11.webp">
+                            <img class="lazyload" data-src="img/card-bg-11.jpg" height="100%" width="100%" alt="work 11">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="photo">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-12.webp">
+                            <img class="lazyload" data-src="img/card-bg-12.jpg" height="100%" width="100%" alt="work 12">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="photo">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-13.webp">
+                            <img class="lazyload" data-src="img/card-bg-13.jpg" height="100%" width="100%" alt="work 13">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="branding">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-14.webp">
+                            <img class="lazyload" data-src="img/card-bg-14.jpg" height="100%" width="100%" alt="work 14">
                         </picture>
                     </div>
-                    <div class="works__item">
+                    <div class="works__item" title="mobile">
                         <picture class="works__image">
-                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
-                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-15.webp">
+                            <img class="lazyload" data-src="img/card-bg-15.jpg" height="100%" width="100%" alt="work 15">
                         </picture>
                     </div>
                 </div>
             </section>
 
             <section class="tools">
-                <div class="tools__slider">
-                    <slide class="tools__slide">
-                        <svg class="tools__icon">
-                            <use xlink:href="img/sprite.svg#themeforest"></use>
-                        </svg>
-                        <span class="tools__name">themeforest</span>
-                    </slide>
-                    <slide class="tools__slide">
-                        <svg class="tools__icon">
-                            <use xlink:href="img/sprite.svg#graphicriver"></use>
-                        </svg>
-                        <span class="tools__name">graphicriver</span>
-                    </slide>
-                    <slide class="tools__slide">
-                        <svg class="tools__icon">
-                            <use xlink:href="img/sprite.svg#videohive"></use>
-                        </svg>
-                        <span class="tools__name">videohive</span>
-                    </slide>
-                    <slide class="tools__slide">
-                        <svg class="tools__icon">
-                            <use xlink:href="img/sprite.svg#themeforest"></use>
-                        </svg>
-                        <span class="tools__name">themeforest</span>
-                    </slide>
+                <div class="container">
+                    <div class="tools__slider owl-carousel owl-theme">
+                        <slide class="tools__slide">
+                            <svg class="tools__icon tools__icon--forest">
+                                <use xlink:href="img/sprite.svg#themeforest"></use>
+                            </svg>
+                        </slide>
+                        <slide class="tools__slide">
+                            <svg class="tools__icon tools__icon--river">
+                                <use xlink:href="img/sprite.svg#graphicriver"></use>
+                            </svg>
+                        </slide>
+                        <slide class="tools__slide">
+                            <svg class="tools__icon tools__icon--videohive">
+                                <use xlink:href="img/sprite.svg#videohive"></use>
+                            </svg>
+                        </slide>
+                        <slide class="tools__slide">
+                            <svg class="tools__icon tools__icon--forest">
+                                <use xlink:href="img/sprite.svg#themeforest"></use>
+                            </svg>
+                        </slide>
+                    </div>
                 </div>
             </section>
 
@@ -239,89 +242,100 @@
                     </p>
                     <div class="team__inner">
                         <section class="team__person">
-                            <div class="team__person-slide">
-                                <img src="" alt="" class="team__image">
-                                <span class="team__name">jane smith</span>
-                                <span class="team__function">designer</span>
-                                <ul class="socials">
-                                    <li class="socials__item">
-                                        <a href="#" class="socials__link">
-                                            <svg class="socials__icon">
-                                                <use xlink:href="img/sprite.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="socials__item">
-                                        <a href="#" class="socials__link">
-                                            <svg class="socials__icon">
-                                                <use xlink:href="img/sprite.svg#facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="socials__item">
-                                        <a href="#" class="socials__link">
-                                            <svg class="socials__icon">
-                                                <use xlink:href="img/sprite.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team__person-slide">
-                                <img src="" alt="" class="team__image">
-                                <span class="team__name">jane smith</span>
-                                <span class="team__function">designer</span>
-                                <ul class="socials">
-                                    <li class="socials__item">
-                                        <a href="#" class="socials__link">
-                                            <svg class="socials__icon">
-                                                <use xlink:href="img/sprite.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="socials__item">
-                                        <a href="#" class="socials__link">
-                                            <svg class="socials__icon">
-                                                <use xlink:href="img/sprite.svg#facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="socials__item">
-                                        <a href="#" class="socials__link">
-                                            <svg class="socials__icon">
-                                                <use xlink:href="img/sprite.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team__person-slide">
-                                <img src="" alt="" class="team__image">
-                                <span class="team__name">jane smith</span>
-                                <span class="team__function">designer</span>
-                                <ul class="socials">
-                                    <li class="socials__item">
-                                        <a href="#" class="socials__link">
-                                            <svg class="socials__icon">
-                                                <use xlink:href="img/sprite.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="socials__item">
-                                        <a href="#" class="socials__link">
-                                            <svg class="socials__icon">
-                                                <use xlink:href="img/sprite.svg#facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="socials__item">
-                                        <a href="#" class="socials__link">
-                                            <svg class="socials__icon">
-                                                <use xlink:href="img/sprite.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="team__person-slider owl-carousel owl-theme">
+                                <div class="team__person-slide">
+                                    <picture class="team__image">
+                                        <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
+                                        <img class="lazyload" alt="person 1" class="team__image" data-src="img/card-bg-1.jpg" height="100%" width="100%">
+                                    </picture>
+                                    <span class="team__name">jane smith</span>
+                                    <span class="team__function">designer</span>
+                                    <ul class="socials">
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="img/sprite.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team__person-slide">
+                                    <picture class="team__image">
+                                        <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
+                                        <img class="lazyload" alt="person 2" class="team__image" data-src="img/card-bg-1.jpg" height="100%" width="100%">
+                                    </picture>
+                                    <span class="team__name">john brown</span>
+                                    <span class="team__function">manager</span>
+                                    <ul class="socials">
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="img/sprite.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team__person-slide">
+                                    <picture class="team__image">
+                                        <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
+                                        <img class="lazyload" alt="person 3" class="team__image" data-src="img/card-bg-1.jpg" height="100%" width="100%">
+                                    </picture>
+                                    <span class="team__name">lana hopkins</span>
+                                    <span class="team__function">developer</span>
+                                    <ul class="socials">
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="img/sprite.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </section>
                         <section class="team__skills">
@@ -333,22 +347,22 @@
                             <ul class="team__skills-list">
                                 <li class="team__skills-item">
                                     <span class="team__skills-name">photoshop</span>
-                                    <div class="team__skills-decor"></div>
+                                    <div class="team__skills-decor team__skills-decor--photo"></div>
                                     <span class="team__skills-percent">88%</span>
                                 </li>
                                 <li class="team__skills-item">
                                     <span class="team__skills-name">illustrator</span>
-                                    <div class="team__skills-decor"></div>
+                                    <div class="team__skills-decor team__skills-decor--illustrator"></div>
                                     <span class="team__skills-percent">92%</span>
                                 </li>
                                 <li class="team__skills-item">
                                     <span class="team__skills-name">sketch</span>
-                                    <div class="team__skills-decor"></div>
+                                    <div class="team__skills-decor team__skills-decor--sketch"></div>
                                     <span class="team__skills-percent">90%</span>
                                 </li>
                                 <li class="team__skills-item">
                                     <span class="team__skills-name">after effects</span>
-                                    <div class="team__skills-decor"></div>
+                                    <div class="team__skills-decor team__skills-decor--after-effects"></div>
                                     <span class="team__skills-percent">98%</span>
                                 </li>
                             </ul>
@@ -402,108 +416,123 @@
                     </p>
                     <div class="blog__inner">
                         <article class="article">
-                            <img src="" alt="article image" class="article__image">
+                            <div class="article__image article__image--first"></div>
                             <a class="article__link">
                                 <svg class="article__link-icon">
                                     <use xlink:href="img/sprite.svg#link"></use>
                                 </svg>
                             </a>
-                            <button class="article__look">
+                            <a class="article__look">
                                 <svg class="article__look-icon">
                                     <use xlink:href="img/sprite.svg#look"></use>
                                 </svg>
-                            </button>
+                            </a>
                             <div class="article__content">
-                                <h4 class="article__title"></h4>
-                                <p class="article__text"></p>
-                                <span class="article__date">
-                                    <svg class="article__date-icon">
-                                        <use xlink:href="img/sprite.svg#clock"></use>
-                                    </svg>
-                                    25 jan 2015
-                                </span>
-                                <span class="article__like">
-                                    <svg class="article__like-icon">
-                                        <use xlink:href="img/sprite.svg#like"></use>
-                                    </svg>
-                                    25
-                                </span>
-                                <span class="article__comment">
-                                    <svg class="article__comment-icon">
-                                        <use xlink:href="img/sprite.svg#comment"></use>
-                                    </svg>
-                                    11
-                                </span>
+                                <h4 class="article__title">Creat creative & clean</h4>
+                                <p class="article__text">
+                                    Lorem ipsum elit. Saepe, ab!
+                                    Lorem ipsum dolor sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <div class="article__footer">
+                                    <span class="article__date">
+                                        <svg class="article__date-icon">
+                                            <use xlink:href="img/sprite.svg#clock"></use>
+                                        </svg>
+                                        25 jan 2015
+                                    </span>
+                                    <span class="article__like">
+                                        <svg class="article__like-icon">
+                                            <use xlink:href="img/sprite.svg#like"></use>
+                                        </svg>
+                                        25
+                                    </span>
+                                    <span class="article__comment">
+                                        <svg class="article__comment-icon">
+                                            <use xlink:href="img/sprite.svg#comment"></use>
+                                        </svg>
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </article>
                         <article class="article">
-                            <img src="" alt="article image" class="article__image">
+                            <div class="article__image article__image--second"></div>
                             <a class="article__link">
                                 <svg class="article__link-icon">
                                     <use xlink:href="img/sprite.svg#link"></use>
                                 </svg>
                             </a>
-                            <button class="article__look">
+                            <a class="article__look">
                                 <svg class="article__look-icon">
                                     <use xlink:href="img/sprite.svg#look"></use>
                                 </svg>
-                            </button>
+                            </a>
                             <div class="article__content">
-                                <h4 class="article__title"></h4>
-                                <p class="article__text"></p>
-                                <span class="article__date">
-                                    <svg class="article__date-icon">
-                                        <use xlink:href="img/sprite.svg#clock"></use>
-                                    </svg>
-                                    25 jan 2015
-                                </span>
-                                <span class="article__like">
-                                    <svg class="article__like-icon">
-                                        <use xlink:href="img/sprite.svg#like"></use>
-                                    </svg>
-                                    25
-                                </span>
-                                <span class="article__comment">
-                                    <svg class="article__comment-icon">
-                                        <use xlink:href="img/sprite.svg#comment"></use>
-                                    </svg>
-                                    11
-                                </span>
+                                <h4 class="article__title">Make a sleek break</h4>
+                                <p class="article__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ab!
+                                    Lorem ipsum dolor sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <div class="article__footer">
+                                    <span class="article__date">
+                                        <svg class="article__date-icon">
+                                            <use xlink:href="img/sprite.svg#clock"></use>
+                                        </svg>
+                                        25 jan 2015
+                                    </span>
+                                    <span class="article__like">
+                                        <svg class="article__like-icon">
+                                            <use xlink:href="img/sprite.svg#like"></use>
+                                        </svg>
+                                        25
+                                    </span>
+                                    <span class="article__comment">
+                                        <svg class="article__comment-icon">
+                                            <use xlink:href="img/sprite.svg#comment"></use>
+                                        </svg>
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </article>
                         <article class="article">
-                            <img src="" alt="article image" class="article__image">
+                            <div class="article__image article__image--third"></div>
                             <a class="article__link">
                                 <svg class="article__link-icon">
                                     <use xlink:href="img/sprite.svg#link"></use>
                                 </svg>
                             </a>
-                            <button class="article__look">
+                            <a class="article__look">
                                 <svg class="article__look-icon">
                                     <use xlink:href="img/sprite.svg#look"></use>
                                 </svg>
-                            </button>
+                            </a>
                             <div class="article__content">
-                                <h4 class="article__title"></h4>
-                                <p class="article__text"></p>
-                                <span class="article__date">
-                                    <svg class="article__date-icon">
-                                        <use xlink:href="img/sprite.svg#clock"></use>
-                                    </svg>
-                                    25 jan 2015
-                                </span>
-                                <span class="article__like">
-                                    <svg class="article__like-icon">
-                                        <use xlink:href="img/sprite.svg#like"></use>
-                                    </svg>
-                                    25
-                                </span>
-                                <span class="article__comment">
-                                    <svg class="article__comment-icon">
-                                        <use xlink:href="img/sprite.svg#comment"></use>
-                                    </svg>
-                                    11
-                                </span>
+                                <h4 class="article__title">Creative manipulations</h4>
+                                <p class="article__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ab!
+                                    Lorem ipsum dolor sit. Lorem, ipsum dolor.
+                                </p>
+                                <div class="article__footer">
+                                    <span class="article__date">
+                                        <svg class="article__date-icon">
+                                            <use xlink:href="img/sprite.svg#clock"></use>
+                                        </svg>
+                                        25 jan 2015
+                                    </span>
+                                    <span class="article__like">
+                                        <svg class="article__like-icon">
+                                            <use xlink:href="img/sprite.svg#like"></use>
+                                        </svg>
+                                        25
+                                    </span>
+                                    <span class="article__comment">
+                                        <svg class="article__comment-icon">
+                                            <use xlink:href="img/sprite.svg#comment"></use>
+                                        </svg>
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </article>
                     </div>
@@ -624,13 +653,19 @@
                         voluptatem aliquam exercitationem quam ex facilis maxime sint ad!
                     </p>
                     <form class="contact__form">
-                        <label class="input-wrapper" for="name">name</label>
-                        <input class="input" id="name" type="text">
-                        <label class="input-wrapper" for="email">mail</label>
-                        <input class="input" type="email" id="email">
-                        <label class="input-wrapper" for="massage">massage</label>
-                        <textarea id="massage" class="input" style="width:100%; height:170px;"></textarea>
-                        <button class="button">send message</button>
+                        <label class="input-wrapper">
+                            <input class="input" type="text">
+                            <span class="input-text">name</span>
+                        </label>
+                        <label class="input-wrapper">
+                            <input class="input" type="email">
+                            <span class="input-text">mail</span>
+                        </label>
+                        <label class="input-wrapper">
+                            <textarea type="text" class="input" style="width:100%; height:90px;"></textarea>
+                            <span class="input-text">message</span>
+                        </label>
+                        <button type="submit" class="button">send message</button>
                     </form>
                 </div>
             </section>

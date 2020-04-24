@@ -1,0 +1,35 @@
+.contact {
+    padding: 80px 0;
+    text-align: center;
+
+    .text {
+        margin-bottom: 85px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 770px;
+        margin: 0 auto;
+    }
+
+    .input-wrapper {
+        margin-bottom: 50px;
+        box-sizing: border-box;
+
+        &:nth-of-type(1),
+        &:nth-of-type(2) {
+            width: 48%
+        }
+
+        &:nth-of-type(3) {
+            width: 100%;
+        }
+    }
+
+    .button {
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,11 @@
+.blog {
+    padding-top: 70px;
+    padding-bottom: 110px;
+    text-align: center;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+}

@@ -29,10 +29,10 @@
         width: 100%;
         height: 100%;
         font-size: 16px;
-        color: $fontgray;
+        color: $font-gray;
 
         &.active {
-            color: black;
+            color: $font-darkgray;
         }
     }
 
@@ -43,8 +43,8 @@
         margin-top: 20px;
         width: 35px;
         height: 22px;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
+        border-top: 2px solid $font-darkgray;
+        border-bottom: 2px solid $font-darkgray;
         transition: 0.3s;
         cursor: pointer;
 
@@ -57,7 +57,7 @@
             transform: translate(0, -50%);
             width: 35px;
             height: 2px;
-            background: black;
+            background: $font-darkgray;
             transition: 0.3s;
         }
 

@@ -1,0 +1,17 @@
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: $darkgray1 url("../../img/intro-bg.jpg") 0% 100% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $font-lightgray;
+
+    &__text {
+        font-family: "BigNoodleTitling", sans-serif;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+}
