@@ -12,4 +12,17 @@
         display: flex;
         justify-content: center;
     }
+
+    @media (max-width: 900px) {
+        padding: 50px;
+        padding-bottom: 20px;
+
+        .prev {
+            left: -20px;
+        }
+
+        .next {
+            right: -20px;
+        }
+    }
 }

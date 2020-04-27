@@ -29,4 +29,16 @@
     .socials__icon {
         fill: white;
     }
+
+    @media (max-width: 600px) {
+        padding: 40px 0;
+
+        &__logo-text {
+            font-size: 30px;
+        }
+
+        &__tagline {
+            font-size: 14px;
+        }
+    }
 }

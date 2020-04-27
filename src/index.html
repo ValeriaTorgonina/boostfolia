@@ -89,29 +89,31 @@
             </section>
 
             <section class="works" id="works">
-                <h2 class="title">our works</h2>
-                <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Velit praesentium possimus earum ipsa, hic odio.
-                    Lorem, ipsum dolor sit amet consectetur.
-                </p>
-                <ul class="works__filter">
-                    <li class="works__filter-item">
-                        <button class="works__filter-button active" name="all">all projects</button>
-                    </li>
-                    <li class="works__filter-item">
-                        <button class="works__filter-button" name="photo">photography</button>
-                    </li>
-                    <li class="works__filter-item">
-                        <button class="works__filter-button" name="design">web design</button>
-                    </li>
-                    <li class="works__filter-item">
-                        <button class="works__filter-button" name="branding">branding</button>
-                    </li>
-                    <li class="works__filter-item">
-                        <button class="works__filter-button" name="mobile">mobile app</button>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h2 class="title">our works</h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Velit praesentium possimus earum ipsa, hic odio.
+                        Lorem, ipsum dolor sit amet consectetur.
+                    </p>
+                    <ul class="works__filter">
+                        <li class="works__filter-item">
+                            <button class="works__filter-button active" name="all">all projects</button>
+                        </li>
+                        <li class="works__filter-item">
+                            <button class="works__filter-button" name="photo">photography</button>
+                        </li>
+                        <li class="works__filter-item">
+                            <button class="works__filter-button" name="design">web design</button>
+                        </li>
+                        <li class="works__filter-item">
+                            <button class="works__filter-button" name="branding">branding</button>
+                        </li>
+                        <li class="works__filter-item">
+                            <button class="works__filter-button" name="mobile">mobile app</button>
+                        </li>
+                    </ul>
+                </div>
                 <div class="works__inner">
                     <div class="works__item" title="photo">
                         <picture class="works__image">
@@ -243,98 +245,104 @@
                     <div class="team__inner">
                         <section class="team__person">
                             <div class="team__person-slider owl-carousel owl-theme">
-                                <div class="team__person-slide">
-                                    <picture class="team__image">
+                                <div class="team__person-slide" id="person-slide-1">
+                                    <picture class="team__person-image">
                                         <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
                                         <img class="lazyload" alt="person 1" class="team__image" data-src="img/card-bg-1.jpg" height="100%" width="100%">
                                     </picture>
-                                    <span class="team__name">jane smith</span>
-                                    <span class="team__function">designer</span>
-                                    <ul class="socials">
-                                        <li class="socials__item">
-                                            <a href="#" class="socials__link">
-                                                <svg class="socials__icon">
-                                                    <use xlink:href="img/sprite.svg#twitter"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="#" class="socials__link">
-                                                <svg class="socials__icon">
-                                                    <use xlink:href="img/sprite.svg#facebook"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="#" class="socials__link">
-                                                <svg class="socials__icon">
-                                                    <use xlink:href="img/sprite.svg#instagram"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <div class="team__person-content">
+                                        <span class="team__person-name">jane smith</span>
+                                        <span class="team__person-function">designer</span>
+                                        <ul class="socials">
+                                            <li class="socials__item">
+                                                <a href="#" class="socials__link">
+                                                    <svg class="socials__icon">
+                                                        <use xlink:href="img/sprite.svg#twitter"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__item">
+                                                <a href="#" class="socials__link">
+                                                    <svg class="socials__icon">
+                                                        <use xlink:href="img/sprite.svg#facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__item">
+                                                <a href="#" class="socials__link">
+                                                    <svg class="socials__icon">
+                                                        <use xlink:href="img/sprite.svg#instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="team__person-slide">
-                                    <picture class="team__image">
+                                <div class="team__person-slide" id="person-slide-2">
+                                    <picture class="team__person-image">
                                         <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
                                         <img class="lazyload" alt="person 2" class="team__image" data-src="img/card-bg-1.jpg" height="100%" width="100%">
                                     </picture>
-                                    <span class="team__name">john brown</span>
-                                    <span class="team__function">manager</span>
-                                    <ul class="socials">
-                                        <li class="socials__item">
-                                            <a href="#" class="socials__link">
-                                                <svg class="socials__icon">
-                                                    <use xlink:href="img/sprite.svg#twitter"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="#" class="socials__link">
-                                                <svg class="socials__icon">
-                                                    <use xlink:href="img/sprite.svg#facebook"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="#" class="socials__link">
-                                                <svg class="socials__icon">
-                                                    <use xlink:href="img/sprite.svg#instagram"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <div class="team__person-content">
+                                        <span class="team__person-name">john brown</span>
+                                        <span class="team__person-function">manager</span>
+                                        <ul class="socials">
+                                            <li class="socials__item">
+                                                <a href="#" class="socials__link">
+                                                    <svg class="socials__icon">
+                                                        <use xlink:href="img/sprite.svg#twitter"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__item">
+                                                <a href="#" class="socials__link">
+                                                    <svg class="socials__icon">
+                                                        <use xlink:href="img/sprite.svg#facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__item">
+                                                <a href="#" class="socials__link">
+                                                    <svg class="socials__icon">
+                                                        <use xlink:href="img/sprite.svg#instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="team__person-slide">
-                                    <picture class="team__image">
+                                <div class="team__person-slide" id="person-slide-3">
+                                    <picture class="team__person-image">
                                         <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
                                         <img class="lazyload" alt="person 3" class="team__image" data-src="img/card-bg-1.jpg" height="100%" width="100%">
                                     </picture>
-                                    <span class="team__name">lana hopkins</span>
-                                    <span class="team__function">developer</span>
-                                    <ul class="socials">
-                                        <li class="socials__item">
-                                            <a href="#" class="socials__link">
-                                                <svg class="socials__icon">
-                                                    <use xlink:href="img/sprite.svg#twitter"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="#" class="socials__link">
-                                                <svg class="socials__icon">
-                                                    <use xlink:href="img/sprite.svg#facebook"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="#" class="socials__link">
-                                                <svg class="socials__icon">
-                                                    <use xlink:href="img/sprite.svg#instagram"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <div class="team__person-content">
+                                        <span class="team__person-name">lana hopkins</span>
+                                        <span class="team__person-function">developer</span>
+                                        <ul class="socials">
+                                            <li class="socials__item">
+                                                <a href="#" class="socials__link">
+                                                    <svg class="socials__icon">
+                                                        <use xlink:href="img/sprite.svg#twitter"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__item">
+                                                <a href="#" class="socials__link">
+                                                    <svg class="socials__icon">
+                                                        <use xlink:href="img/sprite.svg#facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="socials__item">
+                                                <a href="#" class="socials__link">
+                                                    <svg class="socials__icon">
+                                                        <use xlink:href="img/sprite.svg#instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </section>

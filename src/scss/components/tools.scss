@@ -1,6 +1,7 @@
 .tools {
     background: $darkgray2 url("../../img/intro-bg.jpg") 50% 100% no-repeat;
     background-size: cover;
+    padding-bottom: 20px;
 
     .container {
         position: relative;
@@ -21,26 +22,28 @@
     }
     
     &__slide {
+        display: block;
         width: 220px;
         height: 220px;
         margin: 0 auto;
+        padding-top: 90px;
+        box-sizing: border-box;
     }
 
     &__icon {
         display: block;
         width: 225px;
-        height: 240px;
+        height: 40px;
         margin: 0 auto;
         fill: $lightgray;
 
         &--river {
-            height: 230px;
-            margin-top: 20px;
+            height: 65px;
         }
 
         &--videohive {
-            height: 190px;
-            margin-top: 25px;
+            height: 45px;
+            margin-top: -5px;
         }
     }
 

@@ -153,12 +153,12 @@ h1, h2, h3, p {
     &:after {
         content: "";
         position: absolute;
-        width: 4px;
+        width: 2px;
         height: 30px;
         top: 0;
         right: 0;
         background: $darkgray;
-        transform: rotate(45deg) translate(-10px, 5px);
+        transform: rotate(45deg) translate(-11px, 4px);
     }
 
     &:after {
@@ -173,7 +173,7 @@ h1, h2, h3, p {
 
     &:before,
     &:after {
-        transform: rotate(-45deg) translate(-3px, -7px);
+        transform: rotate(-45deg) translate(-1px, -8px);
     }
     &:after {
         transform: rotate(45deg) translate(-8px, 2px);
@@ -200,9 +200,41 @@ h1, h2, h3, p {
 }
 
 .owl-dot span {
-    background: white!important;
+    background: $font-lightgray!important;
 }
 
 .owl-dot.active span {
     background: $font-gray!important;
+}
+
+@media (max-width: 900px) {
+    .main-title {
+        font-size: 57px;
+    }
+
+    .title {
+        font-size: 45px;
+
+        &--light {
+            font-size: 37px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .input:focus + .input-text {
+        transform: translate(0, -10px);
+    }
+
+    .main-title {
+        font-size: 45px;
+    }
+
+    .title {
+        font-size: 35px;
+
+        &--light {
+            font-size: 34px;
+        }
+    }
 }

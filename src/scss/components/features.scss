@@ -35,4 +35,27 @@
         color: $font-lightgray;
         font-weight: 300;
     }
+
+    @media (max-width: 900px) {
+        &__number {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        padding-bottom: 30px;
+
+        &__list {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    
+        &__icon,
+        &__text {
+            margin-bottom: 10px;
+        }
+    }
 }

@@ -63,6 +63,7 @@
         width: 24px;
         height: 24px;
         margin: 0 auto;
+        margin-top: 10px;
     }
 
     &__image:hover ~ .article__link,
@@ -99,6 +100,11 @@
         font-size: 14px;
         font-weight: 400;
         text-transform: initial;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
     }
 
     &__footer {
@@ -128,5 +134,10 @@
         width: 13px;
         height: 13px;
         fill: $font-gray;
+    }
+
+    @media (max-width: 900px) {
+        margin: 0 auto;
+        width: 300px;
     }
 }

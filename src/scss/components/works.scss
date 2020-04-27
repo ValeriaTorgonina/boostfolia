@@ -38,4 +38,28 @@
         background: $darkblue;
         height: 200px;
     }
+
+    @media (max-width: 720px) {
+        .text {
+            margin-bottom: 50px;
+        }
+
+        &__filter-button {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        &__filter {
+            margin: 0;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &__filter-button {
+            margin: 0 20px;
+            margin-bottom: 20px;
+        }
+    }
 }

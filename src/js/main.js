@@ -63,33 +63,149 @@ function filter() {
   })
 }
 
+function sliderChange() {
+  const skillsValues = [
+    {
+      id: "person-slide-1",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur numquam reiciendis ipsam nisi veniam tempore.",
+      photo: "88%",
+      sketch: "92%",
+      illustrator: "90%",
+      afterEffects: "98%"
+    },
+    {
+      id: "person-slide-2",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis explicabo harum perferendis soluta omnis, quo assumenda sunt pariatur.",
+      photo: "55%",
+      sketch: "34%",
+      illustrator: "70%",
+      afterEffects: "89%"
+    },
+    {
+      id: "person-slide-3",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt dolore fugiat? Repellendus repudiandae maxime nihil quasi voluptates? Voluptatem?",
+      photo: "91%",
+      sketch: "78%",
+      illustrator: "43%",
+      afterEffects: "82%"
+    }
+  ];
+  const skillsText = $(".team__skills .text");
+  const skillsDecor = $(".team__skills-decor");
+  const skillsPercent = $(".team__skills-percent");
+  const slider = $(".team__person-slider");
+  slider.on('changed.owl.carousel', function() {
+    setTimeout(() => {
+      const active = $(".owl-item.active > .team__person-slide", this).attr("id");
+      const activeValue = skillsValues.find(item => item.id === active);
+      changeSkills(skillsDecor[0], skillsPercent[0], activeValue.photo);
+      changeSkills(skillsDecor[1], skillsPercent[1], activeValue.sketch);
+      changeSkills(skillsDecor[2], skillsPercent[2], activeValue.illustrator);
+      changeSkills(skillsDecor[3], skillsPercent[3], activeValue.afterEffects);
+      skillsText[0].innerHTML = activeValue.text;
+    }, 1)
+  })
+}
+
+function changeSkills(item1, item2, value) {
+  item1.style.background = `linear-gradient(to right, #e84c3d ${value}, white ${value})`;
+  item2.innerHTML = value;
+};
 
 $(document).ready(() => {
   $('.tools__slider').owlCarousel({
     loop: true,
     smartSpeed: 200,
-    items: 3,
-    nav: true,
+    margin: 20,
     lazyLoad: true,
-    animateOut: 'fadeOut',
-    navText: ['<div class="prev"></div>', '<div class="next"></div>'],
-    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      650: {
+        items: 2,
+        nav: true,
+        dots: false,
+        navText: ['<div class="prev"></div>', '<div class="next"></div>'],
+      },
+      950: {
+        items: 3
+      },
+    }
   });
 
   $('.team__person-slider').owlCarousel({
     loop: true,
     smartSpeed: 500,
     items: 1,
-    nav: false,
     lazyLoad: true,
-    dots: true,
+
+    responsive: {
+      0: {
+        dots: true,
+        nav: false,
+      },
+      450: {
+        navText: ['<div class="prev"></div>', '<div class="next"></div>'],
+        dots: false,
+        nav: true,
+      },
+      800: {
+        dots: true,
+        nav: false,
+      },
+    }
   });
 
+  if(window.matchMedia('(max-width: 900px)').matches){
+    $(".blog__inner").addClass("owl-carousel owl-theme");
+    $(".plans__inner").addClass("owl-carousel owl-theme");
 
+    $('.blog__inner').owlCarousel({
+      loop: true,
+      smartSpeed: 200,
+      items: 1,
+      lazyLoad: true,
+
+      responsive: {
+        0: {
+          dots: true,
+          nav: false,
+        },
+        410: {
+          nav: true,
+          dots: false,
+          navText: ['<div class="prev"></div>', '<div class="next"></div>'],
+        }
+      }
+    });
+
+    $('.plans__inner').owlCarousel({
+      loop: true,
+      smartSpeed: 200,
+      nav: false,
+      lazyLoad: true,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        560: {
+          items: 2
+        },
+        800: {
+          items: 3
+        },
+      }
+    });
+  }
 
   scrollHeader();
   toggleMenu();
   getActiveLink();
   playVideo();
   filter();
+  sliderChange();
 });
