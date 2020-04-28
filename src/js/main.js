@@ -112,6 +112,20 @@ function changeSkills(item1, item2, value) {
   item2.innerHTML = value;
 };
 
+function togglePopup() {
+  const popup = $('.popup');
+  const overlay = $('.overlay');
+  $('.article__look').click(() => {
+    console.log('b')
+    popup.addClass('open');
+    overlay.addClass('open');
+  })
+  overlay.click(() => {
+    popup.removeClass('open');
+    overlay.removeClass('open');
+  })
+}
+
 $(document).ready(() => {
   $('.tools__slider').owlCarousel({
     loop: true,
@@ -131,7 +145,10 @@ $(document).ready(() => {
         navText: ['<div class="prev"></div>', '<div class="next"></div>'],
       },
       950: {
-        items: 3
+        items: 3,
+        nav: true,
+        dots: false,
+        navText: ['<div class="prev"></div>', '<div class="next"></div>'],
       },
     }
   });
@@ -208,4 +225,5 @@ $(document).ready(() => {
   playVideo();
   filter();
   sliderChange();
+  togglePopup();
 });
