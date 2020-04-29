@@ -4,7 +4,7 @@ function scrollHeader() {
   let scrollPrev = 0;
   $(window).scroll(() => {
     const scrolled = $(window).scrollTop();
-    if ( scrolled > 100 && scrolled > scrollPrev ) {
+    if ( scrolled > $(window).height() && scrolled > scrollPrev ) {
       header.addClass('out');
     } else {
       header.removeClass('out');
@@ -94,9 +94,9 @@ function sliderChange() {
   const skillsDecor = $(".team__skills-decor");
   const skillsPercent = $(".team__skills-percent");
   const slider = $(".team__person-slider");
-  slider.on('changed.owl.carousel', function() {
+  slider.on('changed.owl.carousel', () => {
     setTimeout(() => {
-      const active = $(".owl-item.active > .team__person-slide", this).attr("id");
+      const active = $(".owl-item.active > .team__person-slide").attr("id");
       const activeValue = skillsValues.find(item => item.id === active);
       changeSkills(skillsDecor[0], skillsPercent[0], activeValue.photo);
       changeSkills(skillsDecor[1], skillsPercent[1], activeValue.sketch);
@@ -119,14 +119,84 @@ function togglePopup() {
     console.log('b')
     popup.addClass('open');
     overlay.addClass('open');
+    $('body').css("overflow", "hidden");
   })
   overlay.click(() => {
     popup.removeClass('open');
     overlay.removeClass('open');
+    $('body').css("overflow", "visible");
   })
 }
 
+function inputChange() {
+  const wrapper = $(".input-wrapper");
+  wrapper.focusout(function() {
+    const input = $(".input", this);
+    const text = $(".input-text", this);
+    if(input.val() !== "") {
+      text.addClass("top")
+    }else {
+      text.removeClass("top")
+    }
+  })
+}
+
+function toggleSliders() {
+  if($(window).width() < 940) {
+    $(".blog__inner").addClass("owl-carousel owl-theme");
+    $(".plans__inner").addClass("owl-carousel owl-theme");
+
+    $('.blog__inner').owlCarousel({
+      loop: true,
+      smartSpeed: 200,
+      items: 1,
+      lazyLoad: true,
+      center: true,
+
+      responsive: {
+        0: {
+          dots: true,
+          nav: false,
+        },
+        410: {
+          nav: true,
+          dots: false,
+          navText: ['<div class="prev"></div>', '<div class="next"></div>'],
+        }
+      }
+    });
+
+    $('.plans__inner').owlCarousel({
+      loop: true,
+      smartSpeed: 200,
+      nav: false,
+      lazyLoad: true,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        560: {
+          items: 2
+        },
+        800: {
+          items: 3
+        },
+      }
+    });
+  }
+
+  if($(window).width() > 940) {
+    $(".blog__inner").trigger('destroy.owl.carousel').removeClass('owl-carousel owl-theme');
+    $(".plans__inner").trigger('destroy.owl.carousel').removeClass('owl-carousel owl-theme');
+  }
+}
+
 $(document).ready(() => {
+  var rellax = new Rellax('.rellax',{
+    center: true
+  });
+
   $('.tools__slider').owlCarousel({
     loop: true,
     smartSpeed: 200,
@@ -176,49 +246,6 @@ $(document).ready(() => {
     }
   });
 
-  if(window.matchMedia('(max-width: 900px)').matches){
-    $(".blog__inner").addClass("owl-carousel owl-theme");
-    $(".plans__inner").addClass("owl-carousel owl-theme");
-
-    $('.blog__inner').owlCarousel({
-      loop: true,
-      smartSpeed: 200,
-      items: 1,
-      lazyLoad: true,
-
-      responsive: {
-        0: {
-          dots: true,
-          nav: false,
-        },
-        410: {
-          nav: true,
-          dots: false,
-          navText: ['<div class="prev"></div>', '<div class="next"></div>'],
-        }
-      }
-    });
-
-    $('.plans__inner').owlCarousel({
-      loop: true,
-      smartSpeed: 200,
-      nav: false,
-      lazyLoad: true,
-      dots: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        560: {
-          items: 2
-        },
-        800: {
-          items: 3
-        },
-      }
-    });
-  }
-
   scrollHeader();
   toggleMenu();
   getActiveLink();
@@ -226,4 +253,10 @@ $(document).ready(() => {
   filter();
   sliderChange();
   togglePopup();
+  inputChange();
+  toggleSliders();
 });
+
+$(window).resize(() => {
+  toggleSliders()
+})

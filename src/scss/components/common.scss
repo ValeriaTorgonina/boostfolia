@@ -41,7 +41,7 @@ h1, h2, h3, p {
     border-bottom: 1px solid $font-lightgray;
 
     &:focus + .input-text {
-        transform: translate(0, -20px);
+        transform: translate(-4px, -25px) scale(0.8);
     }
 }
 
@@ -53,7 +53,7 @@ h1, h2, h3, p {
 .input-text {
     position: absolute;
     left: 0px;
-    top: -10px;
+    top: 15px;
     font-size: 14px;
     font-weight: bold;
     color: $font-gray;
@@ -61,10 +61,18 @@ h1, h2, h3, p {
 
     &:before {
         content: "*";
+        display: block;
         position: absolute;
         top: -2px;
         right: -10px;
         color: $orange;
+    }
+
+    &.top {
+        transform: translate(-4px, -25px) scale(0.8);
+        &:before {
+            display: none;
+        }
     }
 }
 
